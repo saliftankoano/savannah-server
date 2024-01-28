@@ -27,7 +27,7 @@ app.use(cors());
 app.use((req, res, next) => {
   res.header(
     "Access-Control-Allow-Origin",
-    "https://savannah-uv-server.onrender.com/"
+    "https://savannah-uv.onrender.com/"
   );
   res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
   res.header("Access-Control-Allow-Headers", "Content-Type");
