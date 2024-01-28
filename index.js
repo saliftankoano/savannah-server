@@ -24,15 +24,15 @@ app.use(express.json()); // This middleware parses JSON data in the request body
 const port = process.env.PORT;
 
 app.use(cors());
-app.use((req, res, next) => {
-  res.header(
-    "Access-Control-Allow-Origin",
-    "https://savannah-uv.onrender.com/"
-  );
-  res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
-  res.header("Access-Control-Allow-Headers", "Content-Type");
-  next();
-});
+// app.use((req, res, next) => {
+//   res.header(
+//     "Access-Control-Allow-Origin",
+//     "https://savannah-uv.onrender.com/"
+//   );
+//   res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
+//   res.header("Access-Control-Allow-Headers", "Content-Type");
+//   next();
+// });
 app.post("/:entity", async (req, res) => {
   const entity = req.params.entity;
   let result;
